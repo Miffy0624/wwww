@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="tw">
+<head>
+          <meta charset="UTF-8">
+          <title>U0757013 曹孟洧</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<style>
+.full-screen{
+           position:fixed;
+           top:0;
+           left:0;
+           width:100%;
+           height:100%;
+           background:rgba(255,192,203,0.6);
+           z-index:10;
+           display:flex;
+           justify-content:center;
+           align-items:center;
+}
+p{
+           color:red;
+           margin:5px;
+           cursor:pointer;
+}
+p:hover{
+           background:yellow;
+}
+
+
+</style>
+</head>
+<body>
+
+<p>商品說明</p>
+<h1>小小兵</h1>
+#<div class="product" align=center>
+<div class="full-screen" >
+<img src="https://hinetcdn.waca.ec/uploads/shops/2303/products/6a/6afffb11ec7c39a2ebbb5c9dcc91f70d.jpg">
+</div>
+<script>
+$("p").click(function(){
+           $(".full-screen").slideToggle();
+});
+$("img").click(function(){
+           $(".full-screen").slideToggle();
+});
+</script>
+</body>
+</html>
